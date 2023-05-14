@@ -1,3 +1,4 @@
+const Shape = require('./library/shapes');
 const inquirer = require("inquirer");
 
 inquirer
