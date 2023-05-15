@@ -2,7 +2,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 ## Description
-This command line application intakes user input to generate a logo and save it as an SVG file. The application prompts the user to choose a color, shape, and text for  their desired logo.
+This command line application takes user input to generate a logo and save it as an SVG file. The application prompts the user to choose a color, shape, and text for  their desired logo.
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -16,8 +16,12 @@ This command line application intakes user input to generate a logo and save it 
 Nodejs, jest, and inquirer packages
 
 ## Usage
-Users will access the commandline and input ![node index.js] to invoke  prompts. Once all the prompts have been answered correctly, an SVG file will be generated containing the users logo.
+Users will access the commandline and input 'node index.js' to invoke prompts. Once all the prompts have been answered correctly, an SVG file will be generated containing the users logo.
 
+Below is a demo of how to access and use the application via the command line in VS code.
+![demo](./images/SVG-demo.gif)
+
+Link to demo on google drive: https://drive.google.com/file/d/1zmYby3N5LNrVSNDOsaHxO9HuCorlVfZ5/view 
 ## Contributions
 NA
 
