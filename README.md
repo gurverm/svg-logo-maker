@@ -19,7 +19,13 @@ Nodejs, jest, and inquirer packages
 Users will access the commandline and input 'node index.js' to invoke prompts. Once all the prompts have been answered correctly, an SVG file will be generated containing the users logo.
 
 Below is a demo of how to access and use the application via the command line in VS code.
+
 ![demo](./images/SVG-demo.gif)
+
+Example logos generated from this application: 
+[](./examples/example3.svg)
+[](./examples/example1.svg)
+[](./examples/example2.svg)
 
 Link to demo on google drive: https://drive.google.com/file/d/1zmYby3N5LNrVSNDOsaHxO9HuCorlVfZ5/view 
 ## Contributions
