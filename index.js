@@ -58,7 +58,7 @@ function promptUser() {
       {
         type: "input",
         message: "Enter the background color for your logo:",
-        name: "backgroundColor",
+        name: "shapesBackgroundColor",
       },
     ])
     .then((answers) => {
