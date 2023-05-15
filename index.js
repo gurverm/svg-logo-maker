@@ -71,17 +71,17 @@ function writeToFile(fileName, answers) {
           type: "input",
           message:
             "Enter the background color for your logo:",
-          name: "shapeBackgroundColor",
+          name: "backgroundColor",
         },
       ])
-      .then((answers) => {
+      .then((responses) => {
         // Error handling for text prompt (user must enter 3 characters or less for logo to generate)
-        if (answers.text.length > 3) {
+        if (responses.text.length > 3) {
           console.log("Must enter a value of no more than 3 characters");
           promptUser();
         } else {
           // Calling write file function to generate SVG file
-          writeToFile("logo.svg", answers);
+          writeToFile("logo.svg", responses);
         }
       });
   }
