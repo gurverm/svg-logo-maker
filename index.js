@@ -17,13 +17,13 @@ function writeToFile(fileName, answers) {
   let shapeChoice;
   if (answers.shape === "Triangle") {
     shapeChoice = new Triangle();
-    svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeBackgroundColor}"/>`;
+    svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.backgroundColor}"/>`;
   } else if (answers.shape === "Square") {
     shapeChoice = new Square();
-    svgString += `<rect x="73" y="40" width="160" height="160" fill="${answers.shapeBackgroundColor}"/>`;
+    svgString += `<rect x="73" y="40" width="160" height="160" fill="${answers.backgroundColor}"/>`;
   } else {
     shapeChoice = new Circle();
-    svgString += `<circle cx="150" cy="115" r="80" fill="${answers.shapeBackgroundColor}"/>`;
+    svgString += `<circle cx="150" cy="115" r="80" fill="${answers.backgroundColor}"/>`;
   }
 
   svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>`;
@@ -58,13 +58,13 @@ function promptUser() {
       {
         type: "input",
         message: "Enter the background color for your logo:",
-        name: "shapeBackgroundColor",
+        name: "backgroundColor",
       },
     ])
     .then((answers) => {
       // Error handling for svg text length
       if (answers.text.length > 3) {
-        console.log("Must enter a value of no more than 3 characters");
+        console.log("Text must be 3 characters or less");
         promptUser();
       } else {
         // Calling write file function to generate SVG file
